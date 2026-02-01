@@ -68,7 +68,7 @@ export function Navbar({
   ],
   auth = {
     login: { title: "Login", url: "/login" },
-    signup: { title: "Sign up", url: "/signup" },
+    signup: { title: "Register", url: "/register" },
   },
 }: NavbarProps) {
   return (
