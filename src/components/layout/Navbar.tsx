@@ -61,10 +61,10 @@ export function Navbar({
   },
   menu = [
     { title: "Home", url: "/" },
-    { title: "Products", url: "/products" },
-    { title: "Resources", url: "/resources" },
-    { title: "Pricing", url: "/pricing" },
-    { title: "Blog", url: "/blog" },
+    { title: "Tutor", url: "/tutors" },
+    { title: "Categories", url: "/categories" },
+    // { title: "Pricing", url: "/pricing" },
+    // { title: "Blog", url: "/blog" },
   ],
   auth = {
     login: { title: "Login", url: "/login" },
