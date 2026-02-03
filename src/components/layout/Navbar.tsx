@@ -63,6 +63,7 @@ export function Navbar({
     { title: "Home", url: "/" },
     { title: "Tutor", url: "/tutors" },
     { title: "Categories", url: "/categories" },
+    { title: "Dashboard", url: "/dashboard" },
     // { title: "Pricing", url: "/pricing" },
     // { title: "Blog", url: "/blog" },
   ],
