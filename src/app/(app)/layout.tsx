@@ -1,6 +1,7 @@
-import { Navbar } from "@/components/layout/Navbar";
+import { Navbar } from '@/components/layout/Navbar'
+import React from 'react'
 
-export default function CommonLayout({
+export default function HomeLayout({
   children,
 }: {
   children: React.ReactNode;
