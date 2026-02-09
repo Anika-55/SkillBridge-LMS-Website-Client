@@ -1,4 +1,6 @@
-import { AppSidebar } from "@/components/dashboard/app-sidebar"
+"use client";
+
+import { AppSidebar } from "@/components/dashboard/app-sidebar";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -6,18 +8,25 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb"
-import { Separator } from "@/components/ui/separator"
+} from "@/components/ui/breadcrumb";
+import { Separator } from "@/components/ui/separator";
 import {
   SidebarInset,
   SidebarProvider,
   SidebarTrigger,
-} from "@/components/ui/sidebar"
+} from "@/components/ui/sidebar";
+import { Roles } from "@/constants/roles";
 
 export default function Page() {
+  // 🔥 TEMP USER (replace with real auth later)
+  const user = {
+    role: Roles.admin,
+  };
+
   return (
     <SidebarProvider>
-      <AppSidebar />
+      <AppSidebar user={user} />
+
       <SidebarInset>
         <header className="flex h-16 shrink-0 items-center gap-2 border-b">
           <div className="flex items-center gap-2 px-3">
@@ -38,8 +47,7 @@ export default function Page() {
             </Breadcrumb>
           </div>
         </header>
-       
       </SidebarInset>
     </SidebarProvider>
-  )
+  );
 }
