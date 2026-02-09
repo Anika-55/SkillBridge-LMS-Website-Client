@@ -61,9 +61,9 @@ export function Navbar({
   },
   menu = [
     { title: "Home", url: "/" },
-    { title: "Tutor", url: "/tutors" },
+    { title: "Tutor", url: "/tutor" },
     { title: "Categories", url: "/categories" },
-    { title: "Dashboard", url: "/dashboard" },
+    { title: "Dashboard", url: "/user-dashboard" },
     // { title: "Pricing", url: "/pricing" },
     // { title: "Blog", url: "/blog" },
   ],
